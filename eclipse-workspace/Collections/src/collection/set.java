@@ -1,0 +1,45 @@
+package collection;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class set {
+
+	public static void main(String[] args) {
+		
+		Set<Integer> s = new LinkedHashSet<>();
+		s.add(10);
+		s.add(20);
+		s.add(50);
+		s.add(10);
+		s.add(90);
+		
+		System.out.println(s);
+		System.out.println("Enhanced of loop");
+		
+		for(Object b : s) {
+		System.out.println(b);}
+	
+		boolean b = s.contains(50);
+		System.out.println(b);
+		
+	    s.remove(3);
+		System.out.println(s);
+		
+		 s.retainAll(s);
+	     System.out.println(s);
+			
+		int i = s.size();
+		System.out.println(i);
+		
+		s.clear();
+		System.out.println(s);
+		
+		boolean c = s.isEmpty();
+		System.out.println(c);
+		if (c==true) {
+			System.out.println("set is empty");
+		}else
+			System.out.println("set is not empty");
+	}
+}

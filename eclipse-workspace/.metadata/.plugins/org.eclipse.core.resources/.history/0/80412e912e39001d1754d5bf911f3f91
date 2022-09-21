@@ -1,0 +1,17 @@
+package collection;
+
+import java.util.LinkedHashMap;
+
+public class Map {
+
+	public static void main(String[] args) {
+		
+		java.util.Map<Integer, String> mp = new LinkedHashMap<>();
+		mp.put(10, "java");
+		mp.put(20, "Ajay");
+		mp.put(40,"sql");
+		mp.put(50, "sharp");
+		System.out.println(mp);
+		
+	}
+}

@@ -1,0 +1,27 @@
+package collection;
+
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Set;
+
+public class CommonMethod {
+
+	public static void main(String[] args) {
+		
+		
+		List<Integer> l = new LinkedList();
+		l.add(null);
+		l.add(20);
+		l.add(40);
+		l.add(50);
+		l.add(20);
+		System.out.println(l);
+		
+		Set<Integer> s = new LinkedHashSet();
+		
+		s.addAll(l);
+		
+		System.out.println(l.size() - s.size());
+	}
+}

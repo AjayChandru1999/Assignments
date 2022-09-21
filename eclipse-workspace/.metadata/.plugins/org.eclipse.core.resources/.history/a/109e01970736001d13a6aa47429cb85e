@@ -1,0 +1,16 @@
+package org.com;
+
+public class GrandChildClass extends ChildClass {
+
+	public static void main(String[] args) {
+		GrandChildClass gc = new GrandChildClass();
+		gc.employeName();
+		gc.employeNative();
+		gc.employeNumber();
+		gc.employeId();
+		
+		
+
+	}
+
+}

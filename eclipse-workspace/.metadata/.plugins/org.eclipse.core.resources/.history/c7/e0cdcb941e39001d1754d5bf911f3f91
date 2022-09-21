@@ -1,0 +1,17 @@
+package collection;
+
+import java.util.LinkedList;
+
+public class List {
+
+	public static void main(String[] args) {
+		
+		List li = new LinkedList();
+		li.add(10);
+	}
+
+	private void add(int i) {
+		// TODO Auto-generated method stub
+		
+	}
+}

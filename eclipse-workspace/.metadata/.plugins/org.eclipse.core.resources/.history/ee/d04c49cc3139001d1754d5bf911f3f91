@@ -1,0 +1,43 @@
+package collection;
+
+import java.util.LinkedHashMap;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class Map {
+
+	private static char[] ak;
+
+	public static void main(String[] args) {
+		
+		java.util.Map<Integer, String> mp = new LinkedHashMap<>();
+		mp.put(10, "java");
+		mp.put(20, "Ajay");
+		mp.put(40,"sql");
+		mp.put(50, "sharp");
+		System.out.println(mp);
+		
+		String str = mp.get(20);
+		System.out.println(str);
+		
+		boolean value =mp.containsValue("Ajay");
+		System.out.println(value);
+		
+		boolean b = mp.containsKey(50);
+		System.out.println(b);
+		
+		String re = mp.remove(20);
+		System.out.println(re);
+		
+		Set<Entry<Integer,String>> map = mp.entrySet();
+		System.out.println(map);
+		
+		for(Entry<Integer,String> ak : map);{
+		System.out.println(ak);
+		}
+		
+		
+		
+		
+	}
+}

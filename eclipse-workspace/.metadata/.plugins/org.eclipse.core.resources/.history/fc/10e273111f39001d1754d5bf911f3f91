@@ -1,0 +1,17 @@
+package collection;
+
+public class Map {
+	
+	public static void main(String[] args) {
+		
+		Map<Interger,string> mp = new LinkedHashmAP<>();
+		
+	}
+		
+	
+		
+
+	
+
+}
+}

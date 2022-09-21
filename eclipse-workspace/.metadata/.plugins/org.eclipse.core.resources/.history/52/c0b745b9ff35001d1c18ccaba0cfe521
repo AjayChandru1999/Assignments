@@ -1,0 +1,31 @@
+package calculator;
+
+public class Icalculator implements Calculator {
+	public static void main(String[] args) {
+		
+	}
+	public int a;
+	public int b;
+
+	@Override
+	public int add(int a, int b) {
+		System.out.println("Calculator - add " + a + " und " + b);
+		return a+b;
+		
+	}
+
+	@Override
+	public int subtract(int a, int b) {
+		System.out.println("Calculator - subtract " + a + " und " + b);
+		return a-b;
+		
+	}
+
+	@Override
+	public int multiply(int a, int b) {
+		System.out.println("Calculator - multiply " + a + " und " + b);
+		return a*b;
+		
+	}
+
+}

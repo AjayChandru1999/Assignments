@@ -1,0 +1,29 @@
+package collection;
+
+import java.util.LinkedList;
+
+
+public class List {
+	
+	public static void main(String[] args) {
+		
+		LinkedList li = new LinkedList();
+		li.add(10);
+		li.add(20);
+		li.add(50);
+		li.add(10);
+		
+		System.out.println(li);
+		System.out.println("Enhanced of loop");
+		
+		int s = li.size();
+		System.out.println(s);
+		
+		System.out.println(li.size() -1);
+		
+		boolean b = li.contains(50);
+		
+		
+		
+}
+}

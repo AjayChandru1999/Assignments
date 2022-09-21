@@ -1,0 +1,43 @@
+package org;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+
+public class DuplicateCharacter {
+
+	public static void findDuplicateCharacter(String s) {
+		
+		Map<Character, Integer> hm  = new HashMap<Character, Integer>();
+		
+		char[] cha = s.toCharArray();
+		
+		for (char ch : cha) {
+		
+	    if (hm.containsKey(ch)) {
+	    	
+	    	 hm.put(ch, hm.get(ch) + 1);
+        }
+        else {
+        	hm.put(ch, 1);
+        		
+        }
+	    }
+        Set<Character> key = hm.keySet();
+        for (Character c : key) {
+        	if(hm.get(c)>1) {
+        		System.out.println("Duplicate character is " + c + " repeated " + hm.get(c) + " time");
+        	}
+        }
+    
+
+	}
+	public static void main(String[] arg) {
+		DuplicateCharacter dc = new DuplicateCharacter();
+		String s = "seleniumtesting" ;
+	    dc.findDuplicateCharacter(s);
+		
+	}
+	
+
+}

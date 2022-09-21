@@ -1,0 +1,21 @@
+package org;
+
+import java.util.HashSet;
+
+public class HashSet3 {
+	 
+	public static void main(String[] args) {
+		
+		HashSet<String> h_set = new HashSet<String>();
+		   
+		          h_set.add("Apple");
+		          h_set.add("Orange");
+		          h_set.add("Banana");
+		          h_set.add("Grape");
+		          h_set.add("Wtermelon");
+		         
+		    System.out.println("Original Hash Set: " + h_set);
+		    System.out.println("Size of the Hash Set: " + h_set.size());
+	}
+
+}
